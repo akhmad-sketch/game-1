@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Игра с Машиной и Жизнями</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Игра с Машиной и Жизнями</h1>
+  <div id="game">
+    <img id="player" src="car (2).png" alt="Машина" />
+    
+    <div class="road-border"></div>
+    <div class="road-border right"></div>
+
+    <div class="road-line left"></div>
+    <div class="road-line right"></div>
+  </div>
+
+  <div id="info">
+    Очки: <span id="score">0</span> |
+    Скорость: <span id="speed">2</span> |
+    Уровень: <span id="level">1</span> |
+    Жизни: <span id="lives">3</span>
+  </div>
+
+  <button id="shopBtn">Открыть магазин</button>
+
+  <div id="shop" class="hidden">
+    <h2>Магазин</h2>
+    <p>Очки: <span id="scoreShop">0</span></p>
+    <button id="buySpeed" class="shop-item">Увеличить скорость (+1) — 50 очков</button>
+    <button id="buyShield" class="shop-item">Купить щит (защита от 1 столкновения) — 100 очков</button>
+    <button id="buyBonus" class="shop-item">Бонус 100 очков — 80 очков</button>
+    <button id="closeShop">Закрыть магазин</button>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <h2>Игра окончена!</h2>
+    <button id="restartBtn">Начать заново</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
